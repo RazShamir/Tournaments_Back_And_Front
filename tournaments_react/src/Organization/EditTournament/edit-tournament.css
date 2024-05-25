@@ -1,0 +1,77 @@
+
+.edit-tournament-layout {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 1fr;
+    height: 100%;
+}
+.side-menu-edit-tournament {
+    background:whitesmoke;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.side-menu-edit-tournament a {
+    color:black;
+    transition: .3s ease-in-out;
+    font-size: 20px;
+    box-sizing: content-box;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.selected_edit {
+    font-weight: bold;
+    background: lightgray;
+}
+
+.side-menu-edit-tournament a:hover {
+    background: lightgray;
+}
+
+.details-text-area {
+    min-height: 300px;
+    width: 90%;
+    padding:32px;
+}
+
+.details {
+    margin-inline:auto;
+    align-items: center;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+}
+.edit-page {
+    width: 100%;
+    margin-inline: auto;
+}
+
+.preview {
+    min-height: 300px;
+    padding-block: 16px;
+}
+
+.save-button {
+    border: 1px solid white;
+    background:orange;
+    color:white;
+    padding:8px;
+    min-width: 120px;
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    margin-left: 32px;
+    transition: .3s ease-in-out;
+    align-self: flex-start;
+    border-radius: 4px;
+}
+.save-button:hover {
+    filter:brightness(90%);
+    cursor: pointer;
+}
+.disabled {
+    background: gray;
+    color: lightgray;
+}

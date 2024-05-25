@@ -1,0 +1,59 @@
+
+.about-header {
+    background: #333;
+    padding: 20px;
+    text-align: center;
+}
+
+.h1-about {
+    font-size: 2.5em;
+}
+
+.h2-about {
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+.section-about {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.ul-about, .ol-about {
+    list-style: none;
+}
+
+.ol-about ,.li-about {
+    list-style: decimal inside;
+}
+
+.ol-about .li-about:before {
+    content: counter(list-item) ". ";
+    counter-increment: list-item;
+    color: #ff6600; /* Custom number color */
+    font-weight: bold;
+}
+
+/* Style links */
+.aclass {
+    color: #ff6600;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.aclass:hover {
+    color: #ff9933; /* Hover color */
+}
+
+/* Footer style */
+.footer-about {
+    text-align: center;
+    padding: 10px 0;
+    background-color: transparent;
+    color:white;
+}
+.about section {
+    color:white;
+}

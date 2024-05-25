@@ -1,0 +1,139 @@
+.match-header {
+    display: flex;
+    width: 90%;
+    margin-inline: auto;
+    padding: 16px;
+    align-items: end;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+.match-page-row {
+    color:black;
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    margin-block: 16px;
+}
+
+.opponent-name * {
+    padding: 4px;
+    margin: 0px;
+}
+.results {
+    width: 100%;
+}
+
+.results button {
+    width:100%;
+    max-width: 200px;
+    padding: 12px;
+    font-size: 20px;
+    margin-top: 24px;
+    border:none;
+    background:orange;
+    color:white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+.game-row {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.conflict {
+    font-size: 16px;
+}
+.conflict > b {
+    color: red;
+}
+.game-row h4 {
+    margin: 2px;
+}
+
+.indicators {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 8px;
+    padding: 16px;
+}
+
+.game {
+    border-right: 1px solid lightgray;
+    border-left: 1px solid lightgray;
+    padding-inline: 64px;
+    padding-block: 16px;
+}
+.indicators div {
+    width: 120px;
+    height:70px;
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+}
+
+.selected-result  {
+    background: whitesmoke;
+}
+
+.won {
+    background: rgba(87, 236, 87, 0.4);
+}
+
+.lost {
+    background: rgba(189, 51, 51, 0.4);
+}
+
+.header-win {
+    color:rgba(87, 236, 87, 0.7);
+}
+.header-lose {
+    color:rgba(189, 51, 51, 0.7);
+}
+
+
+.no-pointer {
+    pointer-events: none;
+}
+.disabled-game,.disabled-game * {
+    pointer-events: none;
+    background: lightgray;
+    color:gray;
+}
+
+.disabled-button {
+    background: lightgray !important;
+    color:gray  !important;
+    cursor: none;
+}
+
+.copy {
+    transition: .1s linear;
+    cursor: pointer;
+    font-size: 24px;
+}
+.copy::after {
+    content:"click to copy";
+    display: block;
+    font-size: 14px;
+    color:gray;
+}
+.copy:hover {
+    color: #1c74cb;
+}
+
+.timer-header {
+    align-items: center;
+    transform:translateX(-40px);
+}
+
+.match-timer{
+    align-items: center;
+    font-size: 55px;
+}

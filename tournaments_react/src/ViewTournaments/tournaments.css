@@ -1,0 +1,152 @@
+.tournaments-select {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 16px;
+    padding:16px;
+    box-sizing: border-box;
+    height: 70px;
+    background-color: black;
+    color:white;
+}
+
+.link {
+    text-decoration: none;
+    color:white;
+    font-size: 18px;
+    padding: 8px;
+}
+
+.selected-link {
+    text-decoration: none;
+    color:black;
+    font-size: 18px;
+    background:white;
+    border-radius: 8px;
+    padding: 8px;
+}
+
+.tournaments-table  {
+    width:95%;
+    margin-block: 32px;
+    margin-inline: auto;
+    background: black;
+}
+
+.tournament-row_even {
+    padding: 8px;
+    background: purple;
+}
+
+.tournament-row_odd {
+    background: #340334;
+}
+
+tr td,tr th {
+    padding:16px;
+}
+
+.tournaments-header-row {
+    font-size: 18px;
+    border: 5px solid black;
+}
+
+.tournaments-header-row th {
+    border-bottom: 1px solid lightgray;
+}
+
+.tournaments-table tbody tr {
+    padding:8px;
+}
+
+.tournaments-row th {
+    font-size: 18px;
+}
+
+.registrasion {
+    font-size: 18px;
+}
+.registrasion * {
+    text-decoration: none;
+    background: white;
+    height: fit-content;
+    border-radius: 8px;
+    color:black;
+    padding:8px;
+    font-weight: bold;
+}
+
+.register-link {
+    background: purple;
+    color:white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 12px;
+    font-size: 18px;
+    padding-block: 8px;
+}
+.register-link a {
+    color:white;
+    background: orange;
+    padding: 4px;
+    min-width: 100px;
+    text-align: center;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    text-decoration: none;
+    cursor:pointer;
+
+}
+
+.createTournament-link {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 12px;
+    font-size: 18px;
+    padding-block: 8px;
+}
+.createTournament-link a {
+    color:white;
+    background: orange;
+    padding: 8px;
+    min-width: 100px;
+    border: #131313;
+    border-radius: 4px;
+    text-decoration: none;
+    cursor:pointer;
+    margin-left: 30px;
+    margin-top: 8px;
+
+}
+
+
+.standings {
+    background: white;
+    color:black;
+    margin-top: 32px;
+    margin-inline: auto;
+    border-collapse: collapse;
+    min-width: 50%;
+    max-width: 1000px;
+}
+
+.standings thead th {
+    padding: 10px; /* Adjust the padding within headers */
+    font-size: 18px;
+    margin: 5px; /* Adjust the margin around headers */
+}
+
+
+.standings thead {
+    border: 1px solid lightgray;
+}
+.standings tbody td {
+    font-size: 16px;
+}
+.type{
+    font-weight: bold;
+}

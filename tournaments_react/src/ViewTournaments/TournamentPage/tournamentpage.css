@@ -1,0 +1,248 @@
+.date-header-schedule {
+    font-size: 14px;
+}
+
+.schedule-table {
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    min-width: 300px;
+    background: rgba(33, 35, 129, 0.61);
+    padding:16px;
+    color:white;
+    font-size: 18px;
+}
+.schedule-table h4 {
+    padding:0px;
+    margin:0px;
+    font-size: 22px;
+}
+
+.date-header-schedule {
+    margin-left: 8px;
+    margin-block: 8px;
+    font-size: 19px;
+}
+.schedule-table-row {
+    display: flex;
+    width:100%;
+    min-width: 300px;
+    flex-direction: column;
+    column-gap: 12px;
+}
+
+.schedule-table-row .hr {
+    width:100%;
+    height: 0.01em;
+    display: block;
+    background:lightgray;
+}
+.schedule-table-row .details {
+    display: flex;
+    width:90%;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-block: 16px;
+}
+
+.details .num {
+    font-weight: bold;
+}
+
+.phases {
+    display: grid;
+    margin-inline: 16px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 98%;
+    margin-inline: auto;
+}
+
+
+.row h4{
+    padding-inline: 0px;
+    margin-inline: 0px;
+}
+
+.checked_in {
+    font-weight: bold;
+}
+
+.unchecked {
+    color: #7c7c7c;
+}
+.variation {
+    background: rgba(77, 80, 203, 0.61);
+}
+
+.tournament-registrations {
+   display: grid;
+   place-items: center;
+   margin-top: 32px;
+}
+.tournament-registrations .schedule-table {
+    width: 70%;
+    max-width: 350px;
+}
+
+
+.tournament-registrations .schedule-table .schedule-table-row {
+    width: 100%;
+}
+
+
+@media only screen and (min-width:1000px) {
+    .tournament-registrations .schedule-table {
+        width: 50%;
+        max-width: 1000px;
+    }
+}
+
+
+.pairing-row {
+    display: grid;
+    grid-template-columns: 10% 35% 10% 10% 35%;
+    height: 70px;
+    overflow: hidden;
+    box-sizing: border-box;
+    color:black;
+    font-size: 16px;
+    border-bottom: 1px solid gray;
+    background: white;
+}
+
+.pairing-row * {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.view-match-button {
+    margin-block: 4px;
+    background: dodgerblue;
+    color:white;
+    border:none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 4px;
+    transition: .2s linear;
+    font-size: 15px;
+}
+
+.view-match-button:hover {
+    background: #1c74cb;
+}
+.pairings {
+    max-width: 900px;
+    margin-inline:auto;
+    margin-top: 16px;
+}
+
+.pairing-timer {
+    margin-top: 16px;
+    font-weight: bold;
+}
+
+.pairing-player .lose {
+
+}
+
+.win {
+    background: rgba(87, 236, 87, 0.3);
+}
+
+.tie {
+    background: rgba(255, 142, 0, 0.3);
+}
+
+.bold {
+    font-weight: bold;
+    background: whitesmoke;
+}
+.header {
+    display: grid;
+    grid-template-columns: 55% 45%;
+    font-weight: bold;
+}
+
+.rounds {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: row;
+    background: white;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+}
+
+.rounds b {
+    color:black;
+    font-weight: normal;
+    padding-inline: 16px;
+    font-size: 18px;
+}
+.round {
+    padding:4px;
+    padding-inline: 16px;
+    text-decoration: none;
+    color:black;
+    background: white;
+}
+.selected_round {
+    background: lightgray;
+}
+
+.standings-row_even {
+    padding: 8px;
+    background: #ffffff;
+}
+
+.standings-row_odd {
+    background: lightgray;
+}
+
+.details-page {
+    display: grid;
+    overflow-x: hidden;
+    grid-template-columns: 75% 25%;
+}
+.preview {
+    font-size: 16px !important;
+    padding-inline: 16px;
+    box-sizing: border-box;
+    text-align:start;
+    max-height: 800px;
+    overflow-y: scroll;
+}
+
+.info-box {
+    box-sizing: border-box;
+    padding-inline: 16px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.info-line {
+    border-bottom: 1px solid lightgray;
+    font-size: 18px;
+    padding-block: 12px;
+}
+
+.info-line:nth-child(1) {
+    font-weight: bold;
+}
+.details-box {
+    font-size: 18px;
+    text-align: start;
+    padding-inline: 32px;
+    box-sizing: border-box;
+}
+
+

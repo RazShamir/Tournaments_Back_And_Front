@@ -1,0 +1,136 @@
+.organization-select {
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    grid-template-columns: repeat(2,1fr);
+    min-width: 50%;
+    max-width: 1000px;
+    margin-inline: auto;
+    gap: 16px;
+    padding: 16px;
+    margin-block: 80px;
+}
+
+
+.organization-select  a {
+    text-decoration: none;
+    position: relative;
+    color:black;
+    font-size: 18px;
+    background: whitesmoke;
+    padding-inline:8px;
+    padding-block: 16px;
+    cursor:pointer;
+    border-radius: 4px;
+}
+
+
+.organization-select div:hover {
+    background: white;
+    transition: .3s linear;
+}
+.full-row {
+    grid-column: span 2;
+    display: grid;
+}
+
+
+.tournament-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width:max-content;
+}
+
+.tournament-form input[type='datetime-local'] {
+    border:1px solid lightgray;
+}
+
+.Organizer-header {
+    font-size: 40px;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-bottom: 14px;
+}
+
+.Staff-header {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 14px;
+}
+
+.staff-list-grid {
+    display:grid;
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    margin-inline:auto;
+    gap:8px;
+    max-width: 500px;
+    overflow-y: scroll;
+    max-height: 600px;
+    font-size: 18px;
+    padding:16px;
+}
+
+.staff-list-grid::-webkit-scrollbar {
+    display: none;
+}
+
+.staff-list-grid div {
+    background-color: purple;
+    padding: 8px;
+}
+
+.add-button {
+    border: 1px solid white;
+    background:orange;
+    color:white;
+    padding:8px;
+    min-width: 120px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 32px;
+    transition: .3s ease-in-out;
+    align-self: center;
+    border-radius: 4px;
+    filter:brightness(90%);
+    cursor: pointer;
+}
+.staff-list {
+    display: grid;
+    gap:8px;
+    place-self: start;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+}
+
+.staff-list button {
+    padding:8px;
+    color:white;
+    border:none;
+    cursor:pointer;
+    background-color: #351431;
+}
+
+
+.edit-staff {
+    display: grid;
+}
+
+
+
+
+.conflicts-indicator {
+    position: absolute;
+    left: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width:20px;
+    aspect-ratio: auto;
+    color:white;
+    height:20px;
+    background-color: red;
+    padding: 8px;
+    border-radius: 50%;
+    top:calc(50% - 18px);
+}
